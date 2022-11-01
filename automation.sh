@@ -24,7 +24,7 @@ fi
 # making the tar file of log files
 tar -cvf /tmp/Rahul-httpd-$(date '+%d%m%Y-%H%M%S').tar /var/log/apache2/
 
-# intalling AWSCLI and copying the tar file
+# intalling AWSCLI and copying the tar file.
 sudo apt update
 sudo apt install awscli
 aws s3 cp /tmp/Rahul-httpd-01112022-040711.tar  \s3://upgrad-rahul/rahul-httpd-$(date '+%d%m%Y-%H%M%S').tar
