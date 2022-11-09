@@ -32,7 +32,7 @@ timeStamp=$(date '+%d%m%Y-%H%M%S')
 # making the tar file of log files and copying it on AWS S3 bucket
 tar -cvf /tmp/Rahul-httpd-$timeStamp.tar /var/log/apache2/ |aws s3 cp /tmp/Rahul-httpd-$timeStamp.tar  \s3://upgrad-rahul/Rahul-httpd-$timeStamp.tar
 
-#size = $(stat -c %s /tmp/Rahul-httpd-$timeStamp.tar )
+#size = $(stat -c %s /tmp/Rahul-httpd-$timeStamp.tar)
 
 
 #check if inventory file exits and  appending with log data
